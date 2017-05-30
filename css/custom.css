@@ -21,3 +21,24 @@ img.logo {
 .agenda li {
 
 }
+.reveal ul li,
+.reveal ol li {
+    font-size: 30px;
+}
+
+.a-b-testing ol li {
+    list-style: none;
+}
+
+.reveal table td {
+    vertical-align: top;
+    padding: 0;
+}
+
+.a-b-testing img,
+.meaningful-paint img {
+    max-width: 50%;
+}
+.reveal p {
+    font-size: 32px;
+}

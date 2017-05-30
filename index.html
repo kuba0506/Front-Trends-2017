@@ -5,10 +5,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>TDD in testing Web apps</title>
+	<title>Front-Trends 2017</title>
 
 	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/beige.css">
+	<link rel="stylesheet" href="css/theme/white.css">
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -28,259 +28,234 @@
 </head>
 
 <body>
-	<img class="logo" src="/img/KMDlogo.svg">
+	<img class="logo" src="/img/front-trends-logo.png">
+	<!--<img class="logo" src="/img/KMDlogo.svg">-->
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<h2>TDD in testing Web apps</h2>
+				<h2>Front-Trends 2017 <br>Overview</h2>
 				<!--<h4>... and testing basics</h4>-->
 			</section>
 			<section>
 				<section id="fragments">
 					<h2>Agenda</h2>
 					<ol class="agenda">
-						<li><a href="/#/2">What is software testing?</a></li>
-						<li><a href="/#/4">Who does software testing?</a></li>
-						<li><a href="/#/6">Types of software testing.</a></li>
-						<li><a href="/#/7">Levels of software testing.</a></li>
-						<li><a href="/#/10">TDD in software testing.</a></li>
-						<li><a href="/#/13">Demo</a></li>
-						<li><a href="/#/14">Summary</a></li>
-						<li><a href="/#/15">Resources</a></li>
+						<li><a href="/#/2">About Conference</a></li>
+						<li><a href="/#/3">Statistics</a></li>
+						<li><a href="/#/4">Una Kravets: The Power of CSS</a></li>
+						<li><a href="/#/5">Sam Bellen: I didn't know the browser could do that!</a></li>
+						<li><a href="/#/6">Ally Long: Field-tested interfaces for the next billion</a></li>
+						<li><a href="/#/8">Zoe Mickley Gillenwater (Booking.com): Experimenting your way to a better product</a></li>
+						<li><a href="/#/10">Jenna Zeigen: On How Your Brain is Conspiring Against You Making Good Software</a></li>
+						<li><a href="/#/11">Patrick Hamann: The First Meaningful Paint</a></li>
+						<li><a href="/#/14">Kirupa Chinnathambi: Building a Progressive Web App.</a></li>
+						<li><a href="/#/17">Resources.</a></li>
 					</ol>
 				</section>
 			</section>
 
 			<section>
-				<h2>What is software testing? <small>1/2</small></h2>
-				<p>Software testing is a broad term but in general is a process which validate that a software program, application or product:</p>
-				<ul>
-					<li class="fragment">Meets the business and technical requirements that guided it’s design and development</li>
-					<li class="fragment">Has no bugs/defects/errors</li>
-					<li class="fragment">Works as expected</li>
-				</ul>
+				<h3>About Conference</h3>
+				<p><strong>Front-Trends</strong> is a 3-day conference based in Warsaw for web and mobile developers to discover the latest
+					trends, technologies, and ideas in front-end development. For over 7 years, Front-Trends has brought together people
+					from all over the world who are shaping the face of the internet and the future of human-technology interaction.</p>
 			</section>
 
 			<section>
-				<h2>What is software testing? <small>2/2</small></h2>
-				<p>From technical point of view software testing evaluate a software item (i.e. class, class method or function) to detect
-					differences between given input and expected output.</p>
-				<p class="fragment">Furthermore testing assess the quality of the product.</p>
-				<p class="fragment">Testing should be done during the software development process.</p>
+				<h3>Statistics</h2>
+					<ul>
+						<li>Venue - 24-26.05.2017 Warsaw</li>
+						<br>
+						<li class="fragment">Speakers - Europe, North America, Asia, Australia</li>
+						<br>
+						<li class="fragment">Talks - around 30 including lighting talks</li>
+						<br>
+						<li class="fragment">Attendees distribution - 53% Poland, 15% Americas & Asia, Germany 8%, UK 6%, Holland 4%, Spain 4%, Denmark 3.5%, Sweden
+							3.5%, Russia - 2.5%, Norway 1.5%</li>
+					</ul>
 			</section>
 
 			<section>
-				<h2>Who does software testing?&nbsp;<small>1/2</small></h2>
-				<p>In the IT industry, large companies have a team with responsibilities to evaluate the developed software in context of
-					the given requirements. In most cases, the following professionals are involved in testing a system within their respective
-					capacities:
+				<h3>Una Kravets: The Power of CSS</h3>
+				<p>We can make many Photoshop look-like effects just using css. Una showed us 10 effects written in css: modals, lightboxes,
+					tooltips, scroll indicators, carousels ect... They don't need JS. You can have the same results using target, data attributes,
+					siblings- and pseudo-selectors.
 				</p>
+				<a href="http://youmightnotneedjs.com/" target="_blank">DEMO</a>
+			</section>
+
+			<section>
+				<h3>Sam Bellen: I didn't know the browser could do that!</h3>
+				<p>The start of art browser APIs currently supported mainly by Chrome and partialy in other browsers.</p>
 				<ul>
-					<li class="fragment">Software Tester</li>
-					<li class="fragment">Software Developer</li>
-					<li class="fragment">Project Lead/Manager</li>
-					<li class="fragment">End User</li>
+					<li class="fragment">Speech API (speech recognition)</li>
+					<li class="fragment">Geolocation API (requires user permission)</li>
+					<li class="fragment">Notification API (client-side)</li>
+					<li class="fragment">Push API (server-side)</li>
+					<li class="fragment">Battery Manager API</li>
+					<li class="fragment">Media Recorder API</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>Who does software testing?&nbsp;<small>2/2</small></h2>
-				<p>In the incremental software development model (for instance in Scrum), testing is performed at the end of every sprint/iteration
-					and the whole application is tested at the end.</p>
-			</section>
-
-			<section>
-				<h2>Types of software testing.</h2>
-				<ul>
-					<li>
-						Manual testing
-						<small class="fragment">In nutshell manual testing means testing without any automated tools or any scripts. 
-							Tester/developer takes over the role of an end-user and tests the software to identify any unexpected behaviour or bug.</small>
-					</li>
-					<li>
-						Automate testing
-						<small class="fragment">
-							This is a process when a user write scripts or use test framework / library to test the product. 
-							This is just an automation of manual testing. 
-							This kind of testing is used to re-run the test scenarios/ test suits for example whenever user saves his code or push commits to the repository.
-						</small>
-					</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Levels of software testing.</h2>
-				<ul>
-					<li>
-						Functional testing
-						<small>
-							This is a black-box testing which based on the specifications of the software that is to be tested. <br>
-						</small>
-					</li>
-					<li>
-						Non-functional testing
-						<small>
-							This kind of testing involves testing a software from the requirements which are nonfunctional in nature, 
-							but important such as performance (load testing and stress testing), security or user interface.
-						</small>
-					</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Functional testing <small>1/2</small></h2>
-				<p>We can distinguish several types of functional tests:</p>
-				<ul>
-					<li>
-						Unit testing
-						<small class="fragment">
-							The goal of unit testing is to isolate each part of the program and show that individual 
-							parts are correct in terms of requirements and functionality.
-						</small>
-					</li>
-					<li>
-						Integration testing / E2E
-						<small class="fragment">
-							Integration testing is defined as the testing of combined parts of an application to determine if they function correctly. 
-							There are two approaches: <br> 
-							<ul>
-								<li>Bottom-up integration – unit tests are followed by higher level tests</li>
-								<li>Top-down integration – works other way around</li>
-							</ul>
-							In this group we can also distinguish End-to-end testing which  ensure that software works as expected from user’s perpective.
-						</small>
-					</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Functional testing <small>2/2</small></h2>
-				<ul>
-					<li>
-						System testing
-						<small class="fragment">
-							Once all the components are integrated, the application as a whole is tested rigorously
-							to see that it meets the specified Quality Standards.
-						</small>
-					</li>
-					<li>
-						Regression testing
-						<small class="fragment">
-							The intent of regression testing is to ensure that a change, such as a bug fix 
-							should not result in another fault being uncovered in the application.
-						</small>
-					</li>
-					<li>
-						Acceptance testing
-						<small class="fragment">
-							This is arguably the most important type of testing, as it is conducted by the Quality Assurance Team 
-							who will assess whether the application meets the intended specifications and satisfies the client’s requirements.
-						</small>
-					</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>TDD in software testing <small>1/3</small></h2>
-				<p>Test-driven development is a programming methodology that complement test-first approach of Extreme Programming in which
-					developers write tests before implementing a feature or a unit.
+				<h3>Ally Long: Field-tested interfaces for the next billion&nbsp;<small>1/2</small></h3>
+				<p>
+					The <strong>next billion</strong> is the next big wave of people who is gonna come online.
+					<ul>
+						<li>In Europe we have 80% already connected.</li>
+						<li class="fragment">In the USA it's about 75%.</li>
+						<li class="fragment">In Australia 85%.</li>
+						<li class="fragment">In Canada 88%.</li>
+						<li class="fragment">In Mexico and Brazil, it's only 50% connected.</li>
+						<li class="fragment">Africa is around 22%.</li>
+					</ul>
 				</p>
 			</section>
 
-			<section class="tdd">
-				<h2>TDD in software testing <small>2/3</small></h2>
-				<p>TDD is a process that consists of three phases:</p>
-				<img src="/img/tdd.png" alt="tdd life cycle" class="fragment">
+			<section>
+				<h3>Ally Long: Field-tested interfaces for the next billion&nbsp;<small>2/2</small></h3>
+				<p>
+					Creating products for the next billion we need take into account.
+				</p>
+				<table>
+					<tr>
+						<td>
+							<ul>
+								<li>low-end android devices</li>
+								<li>very poor internet connection</li>
+								<li>people turn their phones off all the time</li>
+								<li>people prefer touch screens > laptops</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>under viewport - not discoverable</li>
+								<li>big and simple buttons, obvious actions</li>
+								<li>everything is gonna be clicked</li>
+								<li>animations are a bad idea<</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</section>
+
+			<section class="a-b-testing">
+				<h3>Z.M. Gillenwater: Experimenting your way to a better product.&nbsp;<small>1/2</small></h3>
+				<p>A/B testing - user decides. Booking.com process:</p>
+				<img src="/img/ft17/a-b-testing.jpg" alt="a-b-testing">
+			</section>
+
+			<section class="a-b-testing">
+				<h3>Z.M. Gillenwater: Experimenting your way to a better product.&nbsp;<small>2/2</small></h3>
+				<table>
+					<tr>
+						<td>
+							<ol>
+								<li>1. Make observations, gather ideas</li>
+								<li>2. User center hypothesis: why, what, who, outcome?</li>
+								<li>3. Create tests. Start with the smallest change possible.</li>
+							</ol>
+						</td>
+						<td>
+							<ol>
+								<li>4. Plan the test time (week, month)</li>
+								<li>5. Do the test. Keep eye on metrics(results)</li>
+								<li>6. Accept/reject the hypothesis.</li>
+							</ol>
+						</td>
+					</tr>
+				</table>
+			</section>
+
+			<section class="brain-talk">
+				<h3>Jenna Zeigen: On How Your Brain is Conspiring Against You Making Good Software</h3>
+				<p>Turns out, humans aren't particularly a good fit for programming. We are predictably irrational (Dan Ariely) - we employ tricks, 
+					patterns and shortcuts to think fast, but this has downsides for our judgment. We constantly make errors called cognitive biases.
+					 And if software is for people written by people, how do we make sure we don't carry these biases on to our code?
+				</p>
+					 <a href="https://github.com/nienkedekker/Front-Trends-2017#jenna" target="_blank">read more ...</a>
+			</section>
+
+			<section class="meaningful-paint">
+				<h3>Patrick Hamann: The First Meaningful Paint.&nbsp;<small>1/3</small></h3>
+				<p>The First Meaningful Paint - new metrics, time when a page's primary content appeared on the screen and web fonts have loaded. Should be test</p>
+				<img src="/img/ft17/meaningful-paint.jpg" alt="meaningful-paint">
 			</section>
 
 			<section>
-				<h2>TDD in software testing <small>3/3</small></h2>
+				<h3>Patrick Hamann: The First Meaningful Paint.&nbsp;<small>2/3</small></h3>
+				<p>Testing tools:</p>
 				<ul>
-					<li>
-						Write a failing test
-						<small class="fragment">
-							Write a test that invokes your logic and assert that the correct behaviour is produced.
-							<ul>
-								<li>In a unit test, this would be asserting the return value of a function or verifying 
-									that a mocked dependency was called as expected</li>
-								<li>In a functional test, this would be ensuring that a UI or an API behaves predictably across a number of actions</li>
-							</ul>
-						</small>
-					</li>
-					<li>
-						Make the test pass
-						<small class="fragment">
-							Implement the minimum amount of code that results in the test passing, and ensure that all other tests continue to pass
-						</small>
-					</li>
-					<li>
-						Refactor the implementation
-						<small class="fragment">
-							Update or rewrite the implementation, without breaking any public contracts, to improve 
-							its quality without breaking the new and existing tests
-						</small>
-					</li>
+					<li><a href="https://developers.google.com/web/tools/lighthouse/" target="_blank">Google Lighthouse - audits for performance, accessibility, progressive web apps.</a></li>
+					<li><a href="https://www.webpagetest.org/" target="_blank">WebPageTest</a></li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>Demo</h2>
-				<pre>
-					<code class="html" data-trim contenteditable>
-						<form class="test-form">
-							<fieldset>
-								<legend>Simple form</legend>
-								<label>
-									First name
-									<input name="first-name" type="text" data-validation="alphabetical" data-pattern="^[a-z]+$"/>                
-								</label>
-								<label>
-									Age
-									<input name="age" type="text" data-validation="numeric" data-pattern="^[0-9]+$"/>    
-								</label>
-								<button>Send</button>
-							</fieldset>
-						</form>
-					</code>
-				</pre>
-			</section>
-			<section>
-				<h2>Summary</h2>
-				<section>
-					<ul>
-						<li>An early start to testing reduces the cost and time to rework and produce error-free software that is delivered to
-							the client.</li>
-					</ul>
-				</section>
-				<section>
-					<ul>
-						<li>Diagnosing and fixing errors identified during proper testing should not be interpreted as a time-consuming process
-							but productive activity.</li>
-					</ul>
-				</section>
-				<section>
-					<ul>
-						<li>No one can claim that even well tested software is 100% bug-free.</li>
-					</ul>
-				</section>
-				<section>
-					<ul>
-						<li>Testing software provides a natural way to document our software.</li>
-					</ul>
-				</section>
-				<section>
-					<ul>
-						<li>TDD is time-saving technique and contribute to the quality of a software.</li>
-					</ul>
-				</section>
-			</section>
-			<section>
-				<h2>Resources:</h2>
+				<h3>Patrick Hamann: The First Meaningful Paint.&nbsp;<small>3/3</small></h3>
+				<p>How to optimize:</p>
 				<ul>
-					<li><a href="https://www.tutorialspoint.com/software_testing/software_testing_quick_guide.htm" target="_blank">Software Testing - Overview</a></li>
-					<li><a href="https://www.codeproject.com/Tips/351122/What-is-software-testing-What-are-the-different-ty" target="_blank">What is software testing? What are the different types of testing?</a></li>
-					<li><a href="https://www.sitepoint.com/learning-javascript-test-driven-development-by-example/" target="_blank">Learning JavaScript Test-Driven Development by Examples</a></li>
-					<li><a href="https://mochajs.org/" target="_blank">Mocha - the fun, simple, flexible JavaScript test framework</a></li>
+					<li class="fragment">Inline critical css - improve rendering (first meaningfull paint) significantly - unfortunately not cachable.</li>
+					<br>
+					<li class="fragment">Preload Api - heavy resources: logos, images, fonts</li>
+					<br>
+					<li class="fragment">HTTP/2 server push - send resources before server requests for them - requires server logic</li>
+					<br>
+					<li class="fragment">Async push</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Kirupa Chinnathambi: Building a Progressive Web App.&nbsp;<small>1/3</small></h3>
+				<p>Progressive web apps are apps that are:</p>
+				<ul>
+					<li class="fragment">secure (https)</li>
+					<br>
+					<li class="fragment">fast (spa)</li>
+					<br>
+					<li class="fragment">can sent push notifications</li>
+					<br>
+					<li class="fragment">can appear in the home screen with an icon, a manifest, etc.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Kirupa Chinnathambi: Building a Progressive Web App.&nbsp;<small>2/3</small></h3>
+				<p>PWA contains:</p>
+				<ul>
+					<li class="fragment">Web app</li>
+					<br>
+					<li class="fragment">Manifest file - JSON file that provides information about your web app.</li>
+					<br>
+					<li class="fragment">Service workers -  JS file. It acts as a proxy that sits between your web app, the browser, and the network, when available.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Kirupa Chinnathambi: Building a Progressive Web App.&nbsp;<small>3/3</small></h3>
+				<ol>
+					<li>PWAs are just web apps thay provide a great user experience.</li>
+					<li>Use progressive enhancement so everyone can use them.</li>
+					<li>PWAs work great both inside and outside the browser.</li>
+					<li>Sometimes they're the right solution, sometimes not, and that's okay.</li>
+				</ol>
+			</section>
+
+			<section>
+				<h3>Resources:</h3>
+				<ul>
+					<li><a href="http://youmightnotneedjs.com/" target="_blank">CSS UI Components</a></li>
+					<li><a href="https://cloud.google.com/speech/" target="_blank">Speech API</a></li>
+					<li><a href="https://developers.google.com/maps/documentation/geolocation/intro" target="_blank">Geolocation API</a></li>
+					<li><a href="https://developer.mozilla.org/pl/docs/Web/API/Notifications_API" target="_blank">Notifications API</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Push_API" target="_blank">Push API</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API" target="_blank">Battery API</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API" target="_blank">Media Recorder API</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/A/B_testing" target="_blank">A/B Testing</a></li>
+					<li><a href="https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint" target="_blank">First Meaningful Paint</a></li>
+					<li><a href="https://developers.google.com/web/tools/lighthouse/" target="_blank">Google Lighthouse</a></li>
+					<li><a href="https://www.webpagetest.org/" target="_blank">WebPageTest</a></li>
+					<li><a href="https://developers.google.com/web/progressive-web-apps/" target="_blank">Progressive Web Apps</a></li>
+					<li><a href="http://lab.hakim.se/reveal-js/#/" target="_blank">Reveal.js - The HTML Presentation Framework</a></li>
 				</ul>
 			</section>
 		</div>
